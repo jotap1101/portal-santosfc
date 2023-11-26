@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.5s ease;
+    font-family: 'Poppins', sans-serif;
+    user-select: none;
+    text-decoration: none !important;
+}
+
+body {
+    min-height: 100vh;
+    max-width: 100vw;
+}
+
+.first {
+    position: relative !important;
+    top: 70px !important;
+    padding: 10px 0 20px 0 !important;
+    max-width: 100vw !important;
+}
+
+main h2 {
+    padding: 20px 0;
+    text-align: center;
+}
+
+.pele {
+    position: relative !important;
+    top: 70px !important;
+    max-width: 100vw !important;
+    min-height: 100vh !important;
+}
+
+.pele img {
+    max-width: 100%;
+    background-size: cover;
+}
+
+.swiper .swiper-button-next,
+.swiper .swiper-button-prev,
+.swiper .swiper-pagination {
+    color: #DDA74C;
+}
+
+.elenco swiper {
+    width: 100% !important;
+    height: 100% !important;
+    margin: 40px 0;
+}
+
+.elenco .swiper .swiper-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.elenco .swiper .swiper-wrapper p {
+    position: relative;
+    left: 45%;
+}
+
+.elenco .swiper-slide {
+    text-align: center !important;
+    font-size: 18px !important;
+    background-color: #fff !important;
+    height: 100% !important;
+
+    /* Center slide text vertically */
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: -webkit-flex !important;
+    display: flex !important;
+    flex-direction: column !important;
+    -webkit-box-pack: center !important;
+    -ms-flex-pack: center !important;
+    -webkit-justify-content: center !important;
+    justify-content: center !important;
+    -webkit-box-align: center !important;
+    -ms-flex-align: center !important;
+    -webkit-align-items: center !important;
+    align-items: center !important;
+}
+
+.elenco .swiper-slide div {
+    display: flex;
+    align-items: center !important;
+    gap: 20px;
+}
+
+.elenco .swiper-slide div h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.elenco .swiper-slide div span {
+    font-size: 5rem;
+    font-weight: 700;
+    color: #DDA74C;
+}
+
+.swiper-slide img {
+    display: block !important;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+}
+
+.swiper-slide button a {
+    color: #DDA74C;
+}
+
+audio {
+    width: 100%;
+}
+
+.memorial .swiper {
+    width: 90% !important;
+    height: 377px !important;
+    /* padding: 10px; */
+}
+
+.memorial .swiper .swiper-slide {
+    text-align: center !important;
+    font-size: 18px !important;
+    background: #fff !important;
+    height: 100% !important;
+    /* width: 263px !important; */
+
+    /* Center slide text vertically */
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: -webkit-flex !important;
+    display: flex !important;
+    -webkit-box-pack: center !important;
+    -ms-flex-pack: center !important;
+    -webkit-justify-content: center !important;
+    justify-content: center !important;
+    -webkit-box-align: center !important;
+    -ms-flex-align: center !important;
+    -webkit-align-items: center !important;
+    align-items: center !important;
+    border-radius: 25px;
+    border: 3px solid #DDA74C;
+    perspective: 1000px;
+}
+
+.card__inner {
+    width: 100%;
+    height: 100%;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    position: relative;
+    border-radius: 25px;
+}
+
+.card__inner.is-flipped {
+    transform: rotateY(180deg);
+}
+
+
+.card__face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    overflow: hidden;
+    box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2);
+    border-radius: 25px;
+}
+
+.card__face--front {
+    background-image: linear-gradient(to bottom right, var(--primary), var(--secondary));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card__face h2 {
+    color: #000;
+    font-size: 32px;
+}
+
+.card__face--back {
+    background-color: var(--light);
+    transform: rotateY(180deg);
+}
+
+@media only screen and (max-width: 480px) {
+    .swiper-slide div h2 {
+        font-size: 1.5rem;
+    }
+
+    .swiper-slide div span {
+        font-size: 3rem;
+    }
+}

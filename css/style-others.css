@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.5s ease;
+    font-family: 'Poppins', sans-serif;
+    user-select: none;
+    outline: none;
+    text-decoration: none !important;
+}
+
+body {
+    min-height: 100vh;
+    max-width: 100vw;
+    background-image: url(../img/bg-jogadores.jpg);
+    background-size: cover;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    height: 100vh !important;
+}
+
+.container button a {
+    color: #000;
+}
+
+.container .main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.container .main .info-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 2rem;
+    height: 100%;
+}
+
+.container .main .info-text p {
+    color: #fff;
+    font-weight: 700;
+}
+
+.container .main .info-text .result {
+    color: #DDA74C;
+    font-weight: lighter;
+}
+
+@media only screen and (max-width: 1000px) {
+    .container .main {
+        flex-direction: column;
+        gap: 20px;
+        position: static;
+    }
+
+    .container .main img {
+        display: block !important;
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: cover !important;
+    }
+
+    .container .main .info-text {
+        font-size: 1rem;
+    }
+}
